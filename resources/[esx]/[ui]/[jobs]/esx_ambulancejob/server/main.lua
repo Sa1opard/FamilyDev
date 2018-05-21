@@ -27,7 +27,7 @@ AddEventHandler('esx_ambulancejob:success', function()
   math.randomseed(os.time())
 
   local xPlayer        = ESX.GetPlayerFromId(source)
-  local total          = math.random(Config.NPCJobEarnings.min, Config.NPCJobEarnings.max);
+  local total          = math.random(500, 1000);
   local societyAccount = nil
 
   if xPlayer.job.grade >= 4 then
@@ -40,8 +40,8 @@ AddEventHandler('esx_ambulancejob:success', function()
 
   if societyAccount ~= nil then
 
-    local playerMoney  = math.floor(total / 100 * 50)
-    local societyMoney = math.floor(total / 100 * 50)
+    local playerMoney  = math.floor(total / 100 * 34)
+    local societyMoney = math.floor(total / 100 * 66)
 
     xPlayer.addMoney(playerMoney)
     societyAccount.addMoney(societyMoney)

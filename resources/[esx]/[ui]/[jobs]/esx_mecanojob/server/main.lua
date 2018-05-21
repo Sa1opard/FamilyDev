@@ -330,8 +330,7 @@ RegisterServerEvent('esx_mecanojob:onNPCJobMissionCompleted')
 AddEventHandler('esx_mecanojob:onNPCJobMissionCompleted', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
-	--local total   = math.random(Config.NPCJobEarnings.min, Config.NPCJobEarnings.max);
-	local total = 1000
+	local total   = math.random(500, 1000);
 	local societyAccount = nil
 
 	TriggerEvent('esx_addonaccount:getSharedAccount', 'society_mecano', function(account)
