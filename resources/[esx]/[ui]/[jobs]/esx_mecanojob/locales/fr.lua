@@ -62,6 +62,7 @@ Locales['fr'] = {
   ['please_tow']                = 'veuillez ~y~remorquer~s~ le véhicule',
   ['wait_five']                 = 'Vous devez ~r~attendre~s~ 5 minutes',
   ['must_in_flatbed']           = 'Vous devez être en flatbed pour commencer la mission',
+  ['not_right_place']           = 'Vous devez être au bon endroit pour faire cela',
   ['mechanic_customer']         = 'client mecano',
   ['you_do_not_room']           = '~r~Vous n\'avez plus de place',
   ['recovery_gas_can']          = 'Récupération de ~b~bouteille de gaz~s~...',
@@ -79,4 +80,5 @@ Locales['fr'] = {
   ['you_used_body_kit']         = 'Vous avez utilisé un ~b~Kit de carosserie',
   ['you_removed']               = 'vous avez retiré x',
   ['you_added']                 = 'Vous avez ajouté x',
+  ['player_cannot_hold']        = 'you do ~r~not~w~ have enough ~y~free space~w~ in your inventory!',
 }

@@ -270,8 +270,7 @@ function OpenPersonnelMenu()
 					--table.insert(elements, {label = 'Téléphone',    							value = 'menuperso_moi_telephone'})
 					table.insert(elements, {label = 'Inventaire',             					value = 'menuperso_moi_inventaire'})
 					table.insert(elements, {label = '🔑 Mes Clés',                            value = 'menuperso_moi_clefs'})
-					table.insert(elements, {label = '💵 Mes factures',							value = 'menuperso_moi_factures'})
-					table.insert(elements, {label = 'Carte d\'identité',						value = 'identite_actions'})
+					table.insert(elements, {label = '💵 Mes factures',							value = 'menuperso_moi_factures'})					
 					--table.insert(elements, {label = 'Enlever/retirer masque',							value = 'menuperso_moi_mask'})
 					--table.insert(elements, {label = 'Fouiller une personne',							value = 'bodysearch'})
 
@@ -303,9 +302,6 @@ function OpenPersonnelMenu()
 
 							if data2.current.value == 'menuperso_moi_mask' then
 								openToggleMask()
-							end
-							if data2.current.value == 'identite_actions' then
-								openIdentite()
 							end
 							if data2.current.value == 'bodysearch' then
 								TriggerEvent("menottes:testFouille")
@@ -2151,10 +2147,6 @@ function openFacture()
 	TriggerEvent('NB:closeMenuKey')
 
 	TriggerEvent('NB:openMenuFactures')
-end
-
-function openIdentite()
-	TriggerEvent('gcidentity:Identite')
 end
 
 

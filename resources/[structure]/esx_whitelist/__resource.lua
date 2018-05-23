@@ -10,6 +10,7 @@ server_scripts {
 	'config.lua',
 	'locales/en.lua',
 	'locales/fr.lua',
+	'server/commands.lua',
 	'server/whitelist_sv.lua'
 }
 

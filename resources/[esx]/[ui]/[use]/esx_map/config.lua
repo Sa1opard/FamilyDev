@@ -22,6 +22,16 @@ Config.Map = {
   {name="Yellow Jack",color=23, id=93,x =1992.69, y =3058.57, z =100.319},
   {name="Tequil-La La",color=48, id=93, x=-565.171, y=276.625, z=83.286},
 
+
+  -- Vignerons
+  {name="Vignobles",color=14, id=318, x=-1882.842285, y =2029.14453, z= 140.499786},
+
+  -- Raffineur
+  {name="Raffineur",color=60, id=436, x=1724.6982421875, y =-1575.3970947266, z= 112.58692169189},
+
+  -- Foodtruck
+  {name="FoodTruck",color=67, id=318, x=-159.87442016, y =285.932403, z= 97.838401794},
+
   -- Club de Strip-Tease
   {name="Vanilla Unicorn",color=8, id=121, x=128.727, y=-1298.732, z=29.232},  
 
@@ -32,7 +42,7 @@ Config.Map = {
   {name="Banque", color=36, id=277, x=-112.202, y=6469.295, z=31.626},
   {name="Banque", color=36, id=277, x=314.187, y=-278.621, z=54.170},
   {name="Banque", color=36, id=277, x=-351.534, y=-49.529, z=49.042},
-  {name="Banque", color=36, id=277, x=241.727, y=220.706, z=106.286},
+  {name="Banque PFC", color=1, id=431, x=241.727, y=220.706, z=106.286},
   {name="Banque", color=36, id=277, x=1175.064, y=2706.643, z=38.094},
 
   -- Garages et fourière
@@ -59,12 +69,7 @@ Config.Map = {
   {name="Shops",color=4, id=52,x =1163.373, y =-323.801, z =68.205},
   {name="Shops",color=4, id=52,x =-707.501, y =-914.260, z =18.215},
   {name="Shops",color=4, id=52,x =-1820.523, y =792.518, z =137.118},
-  {name="Shops",color=4, id=52,x =1698.388, y =4924.404, z =41.063},
+  {name="Shops",color=4, id=52,x =1698.388, y =4924.404, z =41.063}
   
-  -- Vignerons
-  {name="Vignobles",color=7, id=85, x=-1882.842285, y =2029.14453, z= 140.499786},
-
-  -- Foodtruck
-  {name="FoodTruck",color=67, id=318, x=-159.87442016, y =285.932403, z= 97.838401794}
 
 }

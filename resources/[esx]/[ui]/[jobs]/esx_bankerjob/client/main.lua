@@ -226,19 +226,19 @@ AddEventHandler('esx_phone:loaded', function (phoneNumber, contacts)
 end)
 
 -- Create Blips
-Citizen.CreateThread(function ()
-  local blip = AddBlipForCoord(Config.Zones.BankActions.Pos.x, Config.Zones.BankActions.Pos.y, Config.Zones.BankActions.Pos.z)
-
-  SetBlipSprite (blip, 108)
-  SetBlipDisplay(blip, 4)
-  SetBlipScale  (blip, 1.0)
-  SetBlipColour (blip, 30)
-  SetBlipAsShortRange(blip, true)
-
-  BeginTextCommandSetBlipName('STRING')
-  AddTextComponentString(_U('bank'))
-  EndTextCommandSetBlipName(blip)
-end)
+--Citizen.CreateThread(function ()
+--  local blip = AddBlipForCoord(Config.Zones.BankActions.Pos.x, Config.Zones.BankActions.Pos.y, Config.Zones.BankActions.Pos.z)
+--
+--  SetBlipSprite (blip, 108)
+--  SetBlipDisplay(blip, 4)
+--  SetBlipScale  (blip, 1.0)
+--  SetBlipColour (blip, 30)
+--  SetBlipAsShortRange(blip, true)
+--
+--  BeginTextCommandSetBlipName('STRING')
+--  AddTextComponentString(_U('bank'))
+--  EndTextCommandSetBlipName(blip)
+--end)
 
 -- Display markers
 Citizen.CreateThread(function ()

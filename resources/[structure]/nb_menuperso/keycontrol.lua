@@ -37,7 +37,12 @@ end)
 --------------------------------------------------------------------------------------------
 -- Config
 --------------------------------------------------------------------------------------------
-
+-- Lever les mains
+Config.handsUP = {
+	clavier = Keys["X"],
+	manette1 = Keys["X"],
+	manette2 = Keys["X"],
+}
 -- Pointer du doigt
 Config.pointing = {
 	clavier = Keys["B"],

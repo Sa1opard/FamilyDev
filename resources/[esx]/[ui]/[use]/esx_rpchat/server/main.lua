@@ -41,6 +41,14 @@ end
       TriggerClientEvent("sendProximityMessageDo", -1, source, name.firstname, table.concat(args, " "))
   end)
 
+--  TriggerEvent('es:addCommand', 'twt', function(source, args, user)
+--  	TriggerClientEvent('chatMessage', -1, "^0[^4Twitter^0] (^5@" .. GetPlayerName(source) .. "^0)", {30, 144, 255}, table.concat(args, " "))
+--  end, {help = 'Send a tweet. [IC]'})
+
+--  TriggerEvent('es:addCommand', 'ooc', function(source, args, user)
+--  	TriggerClientEvent('chatMessage', -1, "OOC | " .. GetPlayerName(source), {128, 128, 128}, table.concat(args, " "))
+--  end, {help = 'Send an out of character message to the whole server.'})
+
 function stringsplit(inputstr, sep)
 	if sep == nil then
 		sep = "%s"

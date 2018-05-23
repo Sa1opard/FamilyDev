@@ -24,11 +24,11 @@ local timer = 1 --in minutes - Set the time during the player is outlaw
 local showOutlaw = true --Set if show outlaw act on map
 local gunshotAlert = true --Set if show alert when player use gun
 local carJackingAlert = true --Set if show when player do carjacking
-local meleeAlert = false --Set if show when player fight in melee
+local meleeAlert = true --Set if show when player fight in melee
 local blipGunTime = 5 --in second
 local blipMeleeTime = 7 --in second
 local blipJackingTime = 10 -- in second
-local showcopsmisbehave = false  --show notification when cops steal too
+local showcopsmisbehave = true  --show notification when cops steal too
 --End config
 
 local timing = timer * 60000 --Don't touche it

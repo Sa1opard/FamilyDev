@@ -43,8 +43,11 @@ end
 Citizen.CreateThread(function()
 	while true do
 		Wait(0)
-		if IsControlJustReleased(0, 246) then
-		OpenCloseVehicle()
+		if GetLastInputMethod(2) then -- Only executes the following if the Input came from a Keyboard or Mouse
+			-- YOUR_CODE_HERE
+			if IsControlJustReleased(0, 246) then
+			OpenCloseVehicle()
+			end
 		end
 	end
 end)

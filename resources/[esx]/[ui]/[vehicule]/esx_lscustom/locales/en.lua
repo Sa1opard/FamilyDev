@@ -1,12 +1,12 @@
 Locales['en'] = {
-
 	['by_default'] = 'default',
 	['installed'] = 'installed',
 	['already_own'] = 'you already own: ~b~',
 	['not_enough_money'] = 'you do not have enough money!',
-	['purchased'] = 'purchased!',
+	['purchased'] = 'you have purchased the mod!',
 	['press_custom'] = 'press ~INPUT_PICKUP~ to personalize your vehicle.',
 	['level'] = 'level ',
+	['neon'] = 'neon',
 -- Paint Colors
 	-- Black
 	['black'] = 'black',
@@ -200,6 +200,7 @@ Locales['en'] = {
 	['suspension'] = 'suspension',
 	['armor'] = 'armor',
 	['turbo'] = 'turbo',
+	['no_turbo'] = 'no turbo',
 -- Cosmetics
 	['cosmetics'] = 'cosmetics',
 	-- Body Parts
@@ -235,9 +236,33 @@ Locales['en'] = {
 	['sport'] = 'sport',
 	['muscle'] = 'muscle',
 	['lowrider'] = 'lowrider',
-	['suv'] = 'sUV',
+	['suv'] = 'SUV',
 	['allterrain'] = 'all terrain',
 	['tuning'] = 'tuning',
 	['motorcycle'] = 'motorcycle',
 	['highend'] = 'high end',
+	
+	['modplateholder'] = 'plate - Back',
+	['modvanityplate'] = 'plate - Front',
+	['interior'] = 'interior',
+	['trim'] = 'trim',
+	['dashboard'] = 'dashboard',
+	['speedometer'] = 'speedometer',
+	['door_speakers'] = 'door speakers',
+	['seats'] = 'seats',
+	['steering_wheel'] = 'steering wheel',
+	['gear_lever'] = 'gear lever',
+	['quarter_deck'] = 'quarter-deck',
+	['speakers'] = 'speakers',
+	['trunk'] = 'trunk',
+	['hydraulic'] = 'hydraulic',
+	['engine_block'] = 'engine block',
+	['air_filter'] = 'air filter',
+	['struts'] = 'struts',
+	['arch_cover'] = 'arch cover',
+	['aerials'] = 'aerials',
+	['wings'] = 'wings',
+	['fuel_tank'] = 'fuel tank',
+	['windows'] = 'windows',
+	['stickers'] = 'stickers',
 }

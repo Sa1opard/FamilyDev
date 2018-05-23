@@ -19,7 +19,6 @@ client_scripts {
   'locales/fr.lua',
   'config.lua',
   'jobs/fisherman.lua',
-  'jobs/fuel.lua',
   'jobs/lumberjack.lua',
   'jobs/miner.lua',
   'jobs/reporter.lua',

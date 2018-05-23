@@ -1836,23 +1836,24 @@ Citizen.CreateThread(function()
 
   end
 end)
+--[[
+  function createBlip(id)
+    ped = GetPlayerPed(id)
+    blip = GetBlipFromEntity(ped)
+    
+    if not DoesBlipExist(blip) then -- Add blip and create head display on player
+      blip = AddBlipForEntity(ped)
+      SetBlipSprite(blip, 1)
+      Citizen.InvokeNative(0x5FBCA48327B914DF, blip, true) -- Player Blip indicator
+      SetBlipRotation(blip, math.ceil(GetEntityHeading(veh))) -- update rotation
+      SetBlipNameToPlayerName(blip, id) -- update blip name
+      SetBlipScale(blip, 0.85) -- set scale
+      SetBlipAsShortRange(blip, true)
+      
+      table.insert(blipsCops, blip) -- add blip to array so we can remove it later
+    end
+  end
 
-function createBlip(id)
-	ped = GetPlayerPed(id)
-	blip = GetBlipFromEntity(ped)
-	
-	if not DoesBlipExist(blip) then -- Add blip and create head display on player
-		blip = AddBlipForEntity(ped)
-		SetBlipSprite(blip, 1)
-		Citizen.InvokeNative(0x5FBCA48327B914DF, blip, true) -- Player Blip indicator
-		SetBlipRotation(blip, math.ceil(GetEntityHeading(veh))) -- update rotation
-		SetBlipNameToPlayerName(blip, id) -- update blip name
-		SetBlipScale(blip, 0.85) -- set scale
-		SetBlipAsShortRange(blip, true)
-		
-		table.insert(blipsCops, blip) -- add blip to array so we can remove it later
-	end
-end
 
 RegisterNetEvent('esx_policejob:updateBlip')
 AddEventHandler('esx_policejob:updateBlip', function()
@@ -1881,7 +1882,7 @@ AddEventHandler('esx_policejob:updateBlip', function()
 	end
 
 end)
-
+]]
 AddEventHandler('playerSpawned', function(spawn)
 	isDead = false
 	if not hasAlreadyJoined then
