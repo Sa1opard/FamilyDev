@@ -6,7 +6,7 @@ Config.Animations = {
 		name  = 'festives',
 		label = 'Festives',
 		items = {
-	    --{label = "Fumer une cigarette", type = "scenario", data = {anim = "WORLD_HUMAN_SMOKING"}},
+	    {label = "Fumer une cigarette", type = "scenario", data = {anim = "WORLD_HUMAN_SMOKING"}},
 	    {label = "Jouer de la musique", type = "scenario", data = {anim = "WORLD_HUMAN_MUSICIAN"}},
 	    {label = "Dj", type = "anim", data = {lib = "anim@mp_player_intcelebrationmale@dj", anim = "dj"}},
 	    {label = "Boire une biere", type = "scenario", data = {anim = "WORLD_HUMAN_DRINKING"}},
@@ -14,7 +14,7 @@ Config.Animations = {
 	    {label = "Air Guitar", type = "anim", data = {lib = "anim@mp_player_intcelebrationmale@air_guitar", anim = "air_guitar"}},
 	    {label = "Air Shagging", type = "anim", data = {lib = "anim@mp_player_intcelebrationfemale@air_shagging", anim = "air_shagging"}},
 	    {label = "Rock'n'roll", type = "anim", data = {lib = "mp_player_int_upperrock", anim = "mp_player_int_rock"}},
-	    {label = "Fumer un joint", type = "scenario", data = {anim = "WORLD_HUMAN_SMOKING_POT"}},
+	    -- {label = "Fumer un joint", type = "scenario", data = {anim = "WORLD_HUMAN_SMOKING_POT"}},
 	    {label = "Bourré sur place", type = "anim", data = {lib = "amb@world_human_bum_standing@drunk@idle_a", anim = "idle_a"}},
 	    {label = "Vomir en voiture", type = "anim", data = {lib = "oddjobs@taxi@tie", anim = "vomit_outside"}},
 		}
@@ -43,7 +43,6 @@ Config.Animations = {
 	    {label = "Police : circulation", type = "scenario", data = {anim = "WORLD_HUMAN_CAR_PARK_ATTENDANT"}},
 	    {label = "Police : jumelles", type = "scenario", data = {anim = "WORLD_HUMAN_BINOCULARS"}},
 	    {label = "Agriculture : récolter", type = "scenario", data = {anim = "world_human_gardener_plant"}},
-	    {label = "Dépanneur : réparer sous véhicule", type = "scenario", data = {anim = "world_human_vehicle_mechanic"}},
 	    {label = "Dépanneur : réparer le moteur", type = "anim", data = {lib = "mini@repair", anim = "fixing_a_ped"}},
 	    {label = "Médecin : observer", type = "scenario", data = {anim = "CODE_HUMAN_MEDIC_KNEEL"}},
 	    {label = "Taxi : parler au client", type = "anim", data = {lib = "oddjobs@taxi@driver", anim = "leanover_idle"}},
@@ -102,7 +101,6 @@ Config.Animations = {
 		items = {
 	    {label = "Boire un café", type = "anim", data = {lib = "amb@world_human_aa_coffee@idle_a", anim = "idle_a"}},
 	    {label = "S'asseoir", type = "anim", data = {lib = "anim@heists@prison_heistunfinished_biztarget_idle", anim = "target_idle"}},
-	    {label = "S'asseoir (Par terre)", type = "scenario", data = {anim = "WORLD_HUMAN_PICNIC"}},
 	    {label = "Attendre contre un mur", type = "scenario", data = {anim = "world_human_leaning"}},
 	    {label = "Couché sur le dos", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE_BACK"}},
 	    {label = "Couché sur le ventre", type = "scenario", data = {anim = "WORLD_HUMAN_SUNBATHE"}},
