@@ -1,17 +1,17 @@
 INTERIORS = {
     -- HOPITAL
-    [1] = {id = 1, x = 275.46, y = -1361.22, z = 24.53, h = 50.37, name = "Hopîtal", destination = {2,3}},
-    [2] = {id = 2, x = 343.47, y = -1398.81, z = 32.51, h = 49.13, name = "Sortie principale", destination = {1,3}},
-    [3] = {id = 3, x = 335.16, y = -1432.06, z = 46.51, h = 141.75, name = "Sortie de service", destination = {1,2}},
+    [1] = {id = 1, x = -600.43, y = -105.08, z = 18.00, h = 50.37, name = "Hopîtal", destination = {2,3}},
+    [2] = {id = 2, x = -601.43, y = -106.08, z = 18.00, h = 49.13, name = "Sortie principale", destination = {1,3}},
+    [3] = {id = 3, x = -602.43, y = -107.08, z = 18.00, h = 141.75, name = "Sortie de service", destination = {1,2}},
 	
     -- FIB
-    [4] = {id = 4, x = -545.31, y = -203.80, z = 38.21, h = 225.505, name = "Etage 1", destination = {5,56}},
-    [5] = {id = 5, x = 136.25, y = -761.49, z = 242.15, h = 160.31, name = "Etage 49", destination = {4,56}},
-    [56] = {id = 56, x = -75.66, y = -827.06, z = 243.38, h = 67.00, name = "Etage 21", destination = {5,4}},
+    [4] = {id = 4, x = -545.31, y = -203.80, z = 38.21, h = 225.505, name = "Etage 1", destination = {5,56,6}},
+    [5] = {id = 5, x = 136.25, y = -761.49, z = 242.15, h = 160.31, name = "Etage 49", destination = {4,56,6}},
+    [56] = {id = 56, x = -75.66, y = -827.06, z = 243.38, h = 67.00, name = "Etage 21", destination = {5,4,6}},
 
     -- FIB GARAGE
-    [6] = {id = 6, x = 142.06883239746, y = -768.97241210938, z = 45.752010345459, h = 72.884956359863, name = "FIB Building", destination = {7}},
-    [7] = {id = 7, x = 176.67442321777, y = -728.77349853516, z = 39.403667449951, h = 248.2452545166, name = "Garage", destination = {6}},
+    [6] = {id = 6, x = 240.35, y = -1004.77, z = -98.99, h = 86.0, name = "Garage", destination = {5,56,4}},
+    [7] = {id = 7, x = 176.67442321777, y = -728.77349853516, z = 39.403667449951, h = 248.2452545166, name = "FIB Building", destination = {7}},
 
     -- BAHMAS MAMAS
     [8] = {id = 8, x = -1387.00, y = -588.00, z = 29.90, h = 202.00, name = "Entrer", destination = {9}},
@@ -81,18 +81,4 @@ INTERIORS = {
 	[44] = {id = 44, x = 1196.00, y = -1484.00, z = 44.80, h = 272.00, name = "NIV -1", destination = {45}},
     [45] = {id = 45, x = 1209.00, y = -1467.00, z = 35.00, h = 90.00, name = "NIV 0", destination = {44}},
 	
-	-- MAISON DU GOUVERNEUR ASCENCEUR
-    [46] = {id = 46, x = -334.00, y = 1115.00, z = 330.10, h = 205.00, name = "RDC", destination = {47,48,49,50}},
-    [47] = {id = 47, x = -333.00, y = 1115.00, z = 325.10, h = 205.00, name = "Niveau -1", destination = {46,48,49,50}},
-    [48] = {id = 48, x = -333.00, y = 1115.00, z = 320.10, h = 205.00, name = "Niveau -2", destination = {46,47,49,50}},
-	[49] = {id = 49, x = -333.00, y = 1115.00, z = 315.10, h = 205.00, name = "Niveau -3", destination = {46,47,48,50}},
-	[50] = {id = 50, x = -333.00, y = 1115.00, z = 310.10, h = 205.00, name = "Niveau -4", destination = {46,47,48,49,50}},
-	
-	-- MAISON DU GOUVERNEUR ASCENCEUR - DERNIER NIVEAU A
-	[52] = {id = 52, x = -339.00, y = 1104.00, z = 310.10, h = 280.00, name = "NIV -4", destination = {53}},
-    [53] = {id = 53, x = -339.00, y = 1104.00, z = 304.10, h = 280.00, name = "NIV -5", destination = {52}},
-
-	-- MAISON DU GOUVERNEUR ASCENCEUR - DERNIER NIVEAU B
-	[54] = {id = 54, x = -322.00, y = 1110.00, z = 310.10, h = 79.00, name = "NIV -4", destination = {55}},
-    [55] = {id = 55, x = -322.00, y = 1110.00, z = 302.10, h = 79.00, name = "NIV -5", destination = {54}},
 }

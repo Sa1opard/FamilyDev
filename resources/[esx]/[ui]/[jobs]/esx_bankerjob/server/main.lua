@@ -68,12 +68,21 @@ function CalculateBankSavings (d, h, m)
     { ['@account_name'] = 'bank_savings' },
     function (result)
       local bankInterests = 0
+      local xPlayers      = ESX.GetPlayers()
 
       for i=1, #result, 1 do
         local foundPlayer = false
-        local xPlayer     = ESX.GetPlayerFromIdentifier(result[i].owner)
+        local xPlayer     = nil
 
-        if xPlayer ~= nil then
+        for i=1, #xPlayers, 1 do
+          local xPlayer2 = ESX.GetPlayerFromId(xPlayers[i])
+          if xPlayer2.identifier == result[i].owner then
+            foundPlayer = true
+            xPlayer     = xPlayer2
+          end
+        end
+
+        if foundPlayer then
           TriggerEvent('esx_addonaccount:getAccount', 'bank_savings', xPlayer.identifier, function (account)
             local interests = math.floor(account.money / 100 * Config.BankSavingPercentage)
             bankInterests   = bankInterests + interests

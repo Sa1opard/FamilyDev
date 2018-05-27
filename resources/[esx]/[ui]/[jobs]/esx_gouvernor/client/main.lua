@@ -155,6 +155,7 @@ function OpenHelicoSpawnerMenu()
 						local elements = {
 							{label = 'Petit Hélico', value = 'Buzzard2'},
 							{label = 'Moyen hélico', value = 'Frogger2'}
+							--{label = 'SUV', value = 'FBI2'}
 						}
 
 						ESX.UI.Menu.CloseAll()
@@ -335,7 +336,7 @@ function OpenVehicleSpawnerMenu()
 		function(data, menu)
 			menu.close()
 			CurrentAction     = 'vehicle_spawner_menu'
-			CurrentActionMsg  = 'Appuyez sur ~E~ pour accéder au menu.'
+			CurrentActionMsg  = 'Appuyez sur ~INPUT_CONTEXT~ pour accéder au menu.'
 			CurrentActionData = {}
 		end
 	)
@@ -794,6 +795,3 @@ function SendNotification(message)
 	AddTextComponentString(message)
 	DrawNotification(false, false)
 end
-
-
--545.19/-203.91/38.21
